@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Text Properties Demo</title>
+
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            background-color: #f8f8f8;
+            color: #333;
+        }
+        .header {
+            background-color: #4CAF50;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        .container {
+            width: 100%;
+            overflow: hidden;
+        }
+
+        .sidebar {
+            width: 30%;
+            float: left;
+            background: #ddd;
+            padding: 15px;
+        }
+
+        .content {
+            width: 65%;
+            float: right;
+            padding: 15px;
+            background: white;
+        }
+
+        .center { text-align: center; }
+        .right { text-align: right; }
+        .underline { text-decoration: underline; }
+        .line-through { text-decoration: line-through; }
+        .overline { text-decoration: overline; }
+        .uppercase { text-transform: uppercase; }
+        .lowercase { text-transform: lowercase; }
+        .capitalize { text-transform: capitalize; }
+        .letter-spacing { letter-spacing: 10px; }
+        .word-spacing { word-spacing: 20px; }
+        .line-height { line-height: 2; }
+        .text-indent { text-indent: 50px; }
+        .rtl { direction: rtl; text-align: right; }
+        .pre { white-space: pre; background: #eee; padding: 10px; }
+
+        .footer {
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+            clear: both;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>CSS Text Properties Demo</h1>
+    </div>
+    <div class="container">
+        <div class="sidebar">
+            <h3 class="capitalize">Sidebar section</h3>
+            <p class="uppercase">This is uppercase text.</p>
+            <p class="lowercase">THIS IS LOWERCASE TEXT.</p>
+            <p class="capitalize">this is capitalized text.</p>
+        </div>
+
+        <div class="content">
+            <h2>Text Alignment & Decoration</h2>
+            <p class="center">This text is centered.</p>
+            <p class="right">This text is aligned to the right.</p>
+                
+            <p class="underline">This text is underlined.</p>
+            <p class="line-through">This text has a line-through effect.</p>
+            <p class="overline">This text has an overline.</p>
+
+            <h2>Spacing & Indentation</h2>
+            <p class="letter-spacing">This text has more letter spacing.</p>
+            <p class="word-spacing">This text has more word spacing.</p>
+            <p class="line-height">This paragraph has increased line height.</p>
+            <p class="text-indent">The first line of this paragraph is indented.</p>
+
+            <h2>RTL Direction & White Space</h2>
+            <p class="rtl">مرحبا بالعالم (Hello World in Arabic - Right to Left)</p>
+            <p class="pre">This text     has preserved    spaces.</p>
+        </div>
+    </div>
+
+    <div class="footer">
+        &copy; 2025 CSS Demo | All Rights Reserved
+    </div>
+
+</body>
+</html>

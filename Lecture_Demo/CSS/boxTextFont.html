@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simple Webpage Layout</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: Arial, sans-serif;
+        }
+
+        .container {
+            width: 95%;
+            margin: 0 auto;
+        }
+
+        .header {
+            background: rgb(69, 59, 211);
+            color: white;
+            text-align: center;
+            padding: 20px;
+            font-size: 26px;
+            font-weight: bold;
+            border-bottom: 3px solid black;
+        }
+
+        .navbar {
+            background: blue;
+            padding: 10px;
+            text-align: center;
+        }
+
+        .navbar a {
+            color: white;
+            text-decoration: none;
+            margin: 0 15px;
+            font-size: 18px;
+            font-weight: bold;
+        }
+
+        .main-content {
+            width: 100%;
+            margin-top: 20px;
+        }
+        .sidebar {
+            width: 30%;
+            background: #f4f4f4;
+            padding: 20px;
+            float: left;
+            border-right: 3px solid #ddd;
+        }
+        .content {
+            width: 70%;
+            padding: 20px;
+            float: left;
+        }
+        .content p {
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: justify;
+            margin-bottom: 15px;
+        }
+
+
+        .footer {
+            clear: both;
+            background: #222;
+            color: white;
+            text-align: center;
+            padding: 15px;
+            margin-top: 20px;
+            font-size: 16px;
+            clear: both;
+        }
+
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <header class="header">
+            Simple Webpage Layout (Box Model)
+        </header>
+        <nav class="navbar">
+            <a href="#">Home</a>
+            <a href="#">About</a>
+            <a href="#">Services</a>
+            <a href="#">Contact</a>
+        </nav>
+        <div class="main-content">
+            <aside class="sidebar">
+                <h3>Sidebar</h3>
+                <p>This is the sidebar content. You can put links or ads here.</p>
+            </aside>
+            <section class="content">
+                <h2>Welcome to My Website</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque interdum, nisi a viverra commodo, felis felis feugiat nunc, ac scelerisque nulla turpis in ligula.</p>
+                <p>Donec efficitur, sapien at luctus cursus, metus odio fringilla nulla, id aliquet tortor erat a nunc.</p>
+            </section>
+        </div>
+
+        <footer class="footer">
+            &copy; 2025 SimpleWeb | All Rights Reserved
+        </footer>
+    </div>
+
+</body>
+</html>

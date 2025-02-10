@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        [class]{
+            background-color: aquamarine;
+        }
+        [class='para']{
+            background-color: red;
+        }
+        [class~='header']{
+            background-color: blueviolet;
+        }
+        [class*='hea']{
+            background-color: green;
+        }
+        [src$='.jpg']{
+            border: 5px solid black;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Core Selectors Demo</h1>
+    </header>
+    <main>
+        <h2 class="header2">About Btech 2nd B div Students</h2>
+        <p class="para">
+            B Div Students wakeup early in the morning sometimes
+        </p>
+        <h2 id="student">About Btech 2nd B div Students</h2>
+        <p id="para2">
+            B Div Students wakeup early in the morning sometimes
+        </p>
+        <h4 class="header2">Helloooo Studentssss</h4>
+        <h4 id="heading3">Again Helloooooo</h4>
+        <img src="../images/chhotabheem.jpg" alt="not found">
+    </main>
+</body>
+</html>

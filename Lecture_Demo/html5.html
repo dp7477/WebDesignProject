@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="HTML5 Demo Document">
+    <title>HTML5 Demo</title>
+</head>
+<body>
+    
+    <!-- Header Section -->
+    <header>
+        <h1>Welcome to the HTML5 Demo Page</h1>
+        <nav>
+            <ul>
+                <li><a href="#about">About</a></li>
+                <li><a href="#multimedia">Multimedia</a></li>
+                <li><a href="#form">Form</a></li>
+                <li><a href="#table">Table</a></li>
+                <li><a href="#footer">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <abbr title="WHO">Worlds Health Organisation</abbr>
+    <!-- Main Content Section -->
+    <main>
+        <!-- Section: About -->
+        <section id="about">
+            <h2>About HTML5</h2>
+            <p>
+                HTML5 is the latest version of the HyperText Markup Language, designed for structuring and presenting content on the web.
+                It introduces new elements, attributes, and behaviors to improve web development.
+            </p>
+            <aside>
+                <p><strong>Note:</strong> HTML5 supports semantic tags, multimedia, and APIs.</p>
+            </aside>
+        </section>
+
+        <!-- Section: Multimedia -->
+        <section id="multimedia">
+            <h2>Multimedia Elements</h2>
+            <article>
+                <h3>Audio Example</h3>
+                <audio controls>
+                    <source src="./titanium.mp3" type="audio/mp3">
+                    Audio not found
+                </audio>
+               
+            </article>
+            <article>
+                <h3>Video Example</h3>
+                <video controls poster="./images/chhotabheem.jpg">
+                    <source src="./Chhota Bheem Title Song.mp4" type="video/mp4">
+                    chhotabhim not found
+                </video>
+            </article>
+        </section>
+
+        <!-- Section: Form -->
+        <section id="form">
+            <h2>HTML5 Form</h2>
+            <form action="/submit" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" placeholder="Enter your email" required><br><br>
+
+                <label for="dob">Date of Birth:</label>
+                <input type="date" id="dob" name="dob"><br><br>
+
+                <label for="color">Favorite Color:</label>
+                <input type="color" id="color" name="color"><br><br>
+
+                <label for="range">Skill Level (1-10):</label>
+                <input type="range" id="range" name="skill" min="1" max="10"><br><br>
+
+                <fieldset>
+                    <legend>Choose your hobbies:</legend>
+                    <input type="checkbox" id="reading" name="hobby" value="Reading">
+                    <label for="reading">Reading</label><br>
+                    <input type="checkbox" id="coding" name="hobby" value="Coding">
+                    <label for="coding">Coding</label><br>
+                    <input type="checkbox" id="traveling" name="hobby" value="Traveling">
+                    <label for="traveling">Traveling</label><br>
+                </fieldset><br>
+
+                <label for="gender">Gender:</label>
+                <input type="radio" id="male" name="gender" value="Male">
+                <label for="male">Male</label>
+                <input type="radio" id="female" name="gender" value="Female">
+                <label for="female">Female</label><br><br>
+
+                <button type="submit">Submit</button>
+            </form>
+        </section>
+
+
+        <!-- Section: Table -->
+        <section id="table">
+            <h2>HTML5 Table</h2>
+            <table border="1">
+                <caption>State-wise Population in India</caption>
+                <thead>
+                    <tr>
+                        <th>State</th>
+                        <th>Population (in millions)</th>
+                        <th>Capital</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Gujarat</td>
+                        <td>63.87</td>
+                        <td>Gandhinagar</td>
+                    </tr>
+                    <tr>
+                        <td>Maharashtra</td>
+                        <td>123.14</td>
+                        <td>Mumbai</td>
+                    </tr>
+                    <tr>
+                        <td>Rajasthan</td>
+                        <td>81.03</td>
+                        <td>Jaipur</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </main>
+
+    <!-- Footer Section -->
+    <footer id="footer">
+        <p>&copy; 2025 HTML5 Demo. All Rights Reserved.</p>
+        <p>Contact us: <a href="mailto:info@example.com">info@example.com</a></p>
+    </footer>
+</body>
+</html>

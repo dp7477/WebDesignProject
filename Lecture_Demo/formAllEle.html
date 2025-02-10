@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rajkot City Feedback</title>
+</head>
+<body>
+    <h1>Rajkot City Feedback Form</h1>
+    <form action="/submit-feedback">
+        <label for="name">Name:</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" placeholder="example@example.com" required><br><br>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" placeholder="Enter your password" minlength="8" required><br><br>
+
+        <fieldset>
+            <legend>Choose Your Favorite Place in Rajkot:</legend>
+            <label>
+                <input type="radio" name="favorite_place" value="race_course" checked>
+                Race Course
+            </label><br>
+            <label>
+                <input type="radio" name="favorite_place" value="crystal_mall">
+                Crystal Mall
+            </label><br>
+            <label>
+                <input type="radio" name="favorite_place" value="iskcon_temple">
+                ISKCON Temple
+            </label>
+        </fieldset><br>
+
+        <fieldset>
+            <legend>Services You Like in Rajkot:</legend>
+            <label>
+                <input type="checkbox" name="services" value="transport">
+                Public Transport
+            </label><br>
+            <label>
+                <input type="checkbox" name="services" value="education">
+                Education
+            </label><br>
+            <label>
+                <input type="checkbox" name="services" value="healthcare">
+                Healthcare
+            </label><br>
+        </fieldset><br>
+
+        <label for="experience">Rate Your Overall Experience:</label>
+        <select id="experience" name="experience">
+            <option value="">please select your review</option>
+            <option value="excellent">Excellent</option>
+            <option value="good">Good</option>
+            <option value="average">Average</option>
+            <option value="poor">Poor</option>
+        </select><br><br>
+
+        <label for="comments">Your Comments:</label><br>
+        <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Write your feedback here..."></textarea><br><br>
+
+        <label for="attachment">Upload a Picture of Rajkot (Optional):</label>
+        <input type="file" id="attachment" name="attachment" accept="image/*"><br><br>
+
+        <label for="visit_date">Last Visit to Rajkot:</label>
+        <input type="date" id="visit_date" name="visit_date"><br><br>
+
+        <label for="satisfaction">Satisfaction Level (0-10):</label>
+        <input type="range" id="satisfaction" name="satisfaction" min="0" max="10" step="1"><br><br>
+
+        <label for="visits">Number of Visits to Rajkot:</label>
+        <input type="number" id="visits" name="visits" min="1" max="100" step="1"><br><br>
+
+        <button type="submit">Submit Feedback</button>
+        <button type="reset">Reset Form</button>
+    </form>
+</body>
+</html>

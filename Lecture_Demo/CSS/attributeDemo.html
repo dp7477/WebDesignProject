@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        [src$='.jpg']{
+            border: 5px solid black;
+        }
+        [class='header']{
+            color: aquamarine;
+        }
+        [class~='header']{
+            color: red;
+        }
+        [class^='hea']{
+            color: red;
+        }
+        [class*='st']{
+            color: red;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1 class="header">This is my header</h1>
+        <h2 class="header2">Btech 2nd B division students</h2>
+        <p class="student">
+            all students are very honest, they all used to wake up early in the morning 
+            sometimes............
+        </p>
+        <h3 class="header3">Btech 2nd B division students</h3>
+        <p class="student2">
+            all students are very honest, they all used to wake up early in the morning 
+            sometimes............
+        </p>
+        <img src="../images/chhotabheem.jpg" alt="not found">
+    </header>
+    <main></main>
+</body>
+</html>

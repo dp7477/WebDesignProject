@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Font Properties Demo</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f8f8f8;
+            margin: 20px;
+        }
+        h1 {
+            font-family: "Georgia", serif;
+            font-size: 36px;
+            font-weight: bold;
+            font-style: italic;
+            text-align: center;
+        }
+        p {
+            font-size: 18px;
+            line-height: 1.6;
+            text-align: justify;
+        }
+        .small-caps { font-variant: small-caps; }
+        .bold { font-weight: 600; }
+        .italic { font-style: italic; }
+        .spacing { letter-spacing: 2px; word-spacing: 5px; }
+        .shorthand {
+            font: italic small-caps bold 30px "Verdana";
+        }
+    </style>
+</head>
+<body>
+
+    <h1>CSS Font Properties</h1>
+
+    <p>This is a normal paragraph demonstrating different font properties.</p>
+
+    <p class="bold">This text is bold.</p>
+    <p class="italic">This text is italic.</p>
+    <p class="small-caps">This text uses small Caps.</p>
+    <p class="spacing">This text has increased letter spacing and word spacing.</p>
+    <p class="shorthand">This text uses the shorthand font property.</p>
+
+</body>
+</html>
