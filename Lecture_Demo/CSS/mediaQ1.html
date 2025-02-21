@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            text-align: center;
+            background-color: antiquewhite;
+        }
+        h1{
+            padding: 10px;
+            background-color: rgb(187, 187, 28);
+        }
+        .navbar{
+            padding: 10px;
+            background-color: black;
+        }
+        a{
+            display: inline-block;
+            padding: 10px;
+            color: white;
+            text-decoration: none;
+        }
+        .container{
+            padding: 10px;
+        }
+        .box{
+            display: inline-block;
+            background-color: rebeccapurple;
+            height: 30vh;
+            width: 35%;
+        }
+        @media (max-width:600px){
+            a{
+                display: block;
+            }
+            .box{
+                display: block;
+                width: 100%;
+                margin: 10px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <h1>Media Q Demo</h1>
+    <div class="navbar">
+        <a href="#">Home</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+        <a href="#">Product</a>
+    </div>
+    <div class="container">
+        <div class="box"></div>
+        <div class="box"></div>
+        <div class="box"></div>
+    </div>
+</body>
+</html>

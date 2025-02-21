@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Image & List Styling</title>
+    <style>
+       img{
+        display: block;
+        margin: 0px auto;
+        border: 5px solid black;
+        border-radius: 10px;
+        transition: transform 1s;
+        box-shadow: -5px 5px 20px salmon;
+       }
+       img:hover{
+        transform: skew(10deg,10deg);
+       }
+       ul li{
+        list-style: none;
+        background: url('https://cdn-icons-png.flaticon.com/128/3909/3909444.png') no-repeat;
+        background-size: 15px;
+        padding-left: 20px;
+       }
+    </style>
+</head>
+<body>
+
+    <h1>Image Styling</h1>
+    <img src="../images/chhotabheem.jpg" alt="Sample Image">
+
+    <h1>List Styling</h1>
+
+    <h2>Styled Unordered List</h2>
+    <ul>
+        <li>Item One</li>
+        <li>Item Two</li>
+        <li>Item Three</li>
+    </ul>
+
+    <h2>Styled Ordered List</h2>
+    <ol>
+        <li>Step One</li>
+        <li>Step Two</li>
+        <li>Step Three</li>
+    </ol>
+
+    <h2>Custom List Icons</h2>
+    <ul class="custom-list">
+        <li>Custom Bullet 1</li>
+        <li>Custom Bullet 2</li>
+        <li>Custom Bullet 3</li>
+    </ul>
+
+</body>
+</html>

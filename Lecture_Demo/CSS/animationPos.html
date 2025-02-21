@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        
+      body{
+        background-color: antiquewhite;
+        margin: 10px;
+      }
+      div{
+        border: 5px solid black;
+        border-radius: 5px;
+        position: absolute;
+        animation: rotate 5s ease-in 1s infinite;
+        transition: transform;
+        margin-left: 80px;
+      }
+      @keyframes rotate{
+        0%{
+            transform: rotate(25deg);
+        }
+        25%{
+            transform: rotate(90deg);
+        }
+        75%{
+            transform: rotate(180deg);
+        }
+        100%{
+            transform: rotate(360deg);
+        }
+      }
+      .saffron{
+        background-color: salmon;
+        height: 300px;
+        width: 300px;
+        top: 50px;
+        left: 50px;
+      }
+      .white{
+        background-color: rgb(251, 251, 250);
+        height: 200px;
+        width: 200px;
+        top: 100px;
+        left: 100px;
+      }
+      .green{
+        height: 100px;
+        width: 100px;
+        background-color: green;
+        top: 150px;
+        left: 150px;
+      }
+    </style>
+</head>
+<body>
+    <div class="saffron"></div>
+    <div class="white"></div>
+    <div class="green"></div>
+</body>
+</html>

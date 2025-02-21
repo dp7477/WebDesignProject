@@ -7,22 +7,20 @@
     <style>
         .container{
             background-color: antiquewhite;
-            height: 200vh;
             margin: 20px;
-            padding: 5px;
+            height: 200vh;
         }
         .relative{
             height: 30vh;
             width: 30%;
-            background-color: black;
             float: left;
-            margin-right: 20px;
+            background-color: black;
         }
         .relative-round{
+            height: 30px;
+            width: 30px;
             border-radius: 50%;
             background-color: white;
-            height: 50px;
-            width: 50px;
             position: relative;
             top: 20px;
             left: 20px;
@@ -30,27 +28,33 @@
         .absolute{
             height: 30vh;
             width: 30%;
-            background-color: black;
             float: left;
+            background-color: black;
+            margin-left: 20px;
             position: relative;
             margin-bottom: 30px;
         }
         .absolute-round1{
+            height: 30px;
+            width: 30px;
             border-radius: 50%;
-            background-color: white;
-            height: 50px;
-            width: 50px;
+            background-color: rgb(216, 102, 3);
             position: absolute;
-            top: 20px;
-            z-index: 1;
+            top: 25px;
         }
         .absolute-round2{
+            height: 30px;
+            width: 30px;
             border-radius: 50%;
-            background-color: rgb(240, 8, 8);
-            height: 50px;
-            width: 50px;
+            background-color: rgb(245, 243, 241);
+        }
+        .absolute-round3{
+            height: 30px;
+            width: 30px;
+            border-radius: 50%;
+            background-color: rgb(12, 148, 39);
             position: absolute;
-            z-index: 1;
+            top: 40px;
         }
         .fixed{
             height: 30vh;
@@ -59,13 +63,13 @@
             clear: both;
         }
         .fixed-round{
+            height: 30px;
+            width: 30px;
             border-radius: 50%;
-            background-color: rgb(240, 8, 8);
-            height: 50px;
-            width: 50px;
+            background-color: rgb(216, 9, 9);
             position: sticky;
-            top: 240px;
-            left: 70px;
+            top: 50px;
+            left: 50px;
         }
     </style>
 </head>
@@ -77,11 +81,11 @@
         <div class="absolute">
             <div class="absolute-round1"></div>
             <div class="absolute-round2"></div>
+            <div class="absolute-round3"></div>
         </div>
         <div class="fixed">
             <div class="fixed-round"></div>
         </div>
     </div>
-    
 </body>
 </html>

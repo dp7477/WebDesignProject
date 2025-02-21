@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        h1,h2,p{
+            background: linear-gradient(red,green);
+            background-clip: text;
+            -webkit-text-fill-color: transparent;
+        }
+        body{
+            position: relative;
+        }
+        body::before{
+            content: '';
+            background: url('../images/chhotabheem.jpg') no-repeat center center/cover;
+            position: fixed;
+            top: 0px;
+            left: 0px;
+            height: 100vh;
+            width: 100%;
+            opacity: 1;
+            z-index: -1;
+        }
+        .header{
+            padding: 10px;
+            background-color: #669BBC;
+            text-align: center;
+            margin-bottom: 10px;
+        }
+        .content1{
+            padding: 10px;
+            background-color: #003049;
+            color: white;
+            transition: transform 1s;
+            box-shadow: 5px 5px 12px grey;
+            margin-bottom: 10px;
+        }
+        .content1:hover{
+            transform: scale(1.02);
+        }
+        button{
+            padding: 10px;
+            cursor: pointer;
+            background-color: #780000;
+            color: white;
+            border: 2px solid white;
+            border-radius: 10px;
+            transition: background-color 1s,transform 1s;
+        }
+        button:hover{
+            background-color: #C1121F;
+            transform: scale(1.2);
+            margin: 15px;
+        }
+        .content2{
+            padding: 10px;
+            background-color: #003049;
+            color: white;
+            transition: transform 1s;
+            box-shadow: 5px 5px 12px grey;
+            margin-bottom: 10px;
+        }
+        .footer{
+            padding: 10px;
+            background-color: #C1121F;
+            color: white;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>About Btech 2nd sem B-Div Students</h1>
+    </div>
+    <div class="content1">
+        <h2>Day to Day Schedule</h2>
+        <ul>
+            <li>Wakeup early in the morning sometimes</li>
+            <li>bathing someday</li>
+        </ul>
+        <button>Click Me To See Details!!!</button>
+    </div>
+    <div class="content2">
+        <h2>Our Shoppingss</h2>
+        <ul>
+            <li>Sports Shoes Sastaaa</li>
+            <li>Shockssss</li>
+        </ul>
+        <button>Click Me To See Details!!!</button>
+
+    </div>
+    <div class="footer">@footer</div>
+</body>
+</html>
