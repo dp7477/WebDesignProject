@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pseudo Classes & Elements Demo</title>
+    <style>
+        /* Pseudo Classes */
+        a:hover {
+            color: red;
+        }
+        input:focus {
+            border: 2px solid rgb(2, 32, 1);
+        }
+        li:first-child {
+            font-weight: bold;
+        }
+        li:last-child {
+            font-style: italic;
+        }
+        p:nth-of-type(2) {
+            background-color: yellow;
+        }
+        p:nth-child(2){
+            background-color: red;
+        }
+        div:has(p) {
+            border: 2px solid green;
+        }
+        button:active {
+            background-color: lightblue;
+        }
+        input:checked + label {
+            color: green;
+        }
+        div:not(.container) {
+            background-color: lightgray;
+        }
+
+        /* Pseudo Elements */
+        p::first-letter {
+            font-size: 2em;
+            color: purple;
+        }
+        p::first-line {
+            font-weight: bold;
+        }
+        h1::after {
+            content: " 🌟";
+        }
+        h1::before {
+            content: "✨ ";
+        }
+        input::placeholder {
+            color: rgb(239, 10, 10);
+            font-style: italic;
+        }
+    </style>
+</head>
+<body>
+    <h1>Pseudo Classes & Elements</h1>
+    
+    <nav>
+        <a href="#">Home</a> | 
+        <a href="#">About</a> | 
+        <a href="#">Contact</a>
+    </nav>
+    
+    <section>
+        <h2>List Example</h2>
+        <ul>
+            <li>First Item (First Child)</li>
+            <li>Middle Item</li>
+            <li>Last Item (Last Child)</li>
+        </ul>
+    </section>
+    <p>Sampleeeeee</p>
+    <p>Sampleeeeee</p>
+    <p>Sampleeeeee</p>
+    <section>
+        <h2>Form Example</h2>
+        <input type="text" placeholder="Enter your name"><br><br>
+        <input type="checkbox" id="agree">
+        <label for="agree">Agree to Terms</label>
+        <br><br>
+        <button>Click Me</button>
+    </section>
+    <section>
+        <h2>Paragraph Example</h2>
+        <p>Sampleeeeee</p>
+        <p>This is a sample paragraph demonstrating pseudo-elements.</p>
+        <p>This is another paragraph that is highlighted using nth-child.</p>
+    </section>
+
+    <section>
+        <h2>Image Example</h2>
+        <div>
+            <img src="../images/chhotabheem.jpg" alt="Sample Image">
+            <p>Image is inside this div.</p>
+        </div>
+    </section>
+</body>
+</html>

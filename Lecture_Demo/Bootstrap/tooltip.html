@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=p, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .tooltip{
+            padding: 20px;
+            background-color: red;
+            color: white;
+            position: relative;
+        }
+        .tooltip:hover::after{
+            content: 'this is pop up effect';
+            position: absolute;
+            padding: 10px;
+            background-color: black;
+            color: white;
+            border-radius: 10%;
+            top: 60px;
+            left: 30px;
+        }
+    </style>
+</head>
+<body>
+    <p>here we have  <span class="tooltip">tooltip</span> Demo</p>
+</body>
+</html>
